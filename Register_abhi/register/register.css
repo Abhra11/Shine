@@ -1,0 +1,161 @@
+#upper{
+    margin: auto;
+   width: 80%; 
+   border: 1px solid white;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   height: 100%
+}
+#upper>h1{
+    width: 35%;
+   
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 3%;
+}
+#box{
+cursor: pointer;
+width: 40%;
+margin: auto;
+margin-left: 20%;
+display: flex;
+border: 1px solid blueviolet;
+} 
+#box>p{
+margin-left: 2%;
+}
+#box>h3{
+
+margin: auto;
+margin-left: 48%;
+color: blueviolet;
+}
+#border{
+display: flex;
+margin-left: 20%;
+}
+#border>p{
+margin-left: 15px;
+margin-right: 15px;
+font-weight: bold;
+color: black;
+}
+#border1{
+height: 0px;
+border: 1px solid grey;
+width: 16%;
+margin-top: 20px;
+background-color: grey;
+}
+#border2{
+height: 0px;
+border: 1px solid grey;
+width: 15%;
+margin-top: 20px;
+background-color: grey;
+}
+#p{
+margin-left: 29%;
+font-size: 10px;
+}
+#form{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+width: 70%;
+height: 10%;
+margin-left: 4%;
+/* margin: auto; */
+}
+#form>input{
+width: 83%;
+padding: 10px 20px;
+margin: 20px 12px;
+margin-left: -5px;
+}
+#form>input:nth-child(7){
+width: 183%
+}
+#skill{
+margin-left: 4%;
+margin-top: -2%;
+}
+#upload{
+cursor: pointer;
+width: 10%;
+margin: auto;
+font-weight: bold;
+border: 1px solid blueviolet;
+padding: 15px 60px;
+text-align: center;
+margin-left: 27%;
+}
+#uploadbottom{
+font-size: 10px;
+margin-left: 28%;
+margin-top: 1%;
+}
+#uploadup{
+
+margin-left: 15%;
+margin-top: 1%;
+}
+#uploadup>a{
+color: blueviolet;
+text-decoration: none;
+}
+#register{
+border-radius: 5px;
+cursor: pointer;
+font-size: 18px;
+color: white;
+font-weight: bold;
+border: 1px solid transparent;
+margin-left: 33%;
+margin-top: 1%;
+margin-bottom: 3%;
+padding: 10px 20px;
+text-align: center;
+background-color: #8652ff;
+}
+#flex{
+display: grid;
+grid-template-columns: repeat(3,40%);
+}
+#flex>div:nth-child(1){
+width: 250%;
+}
+#flex>div:nth-child(2){
+width: 20%;
+/* margin-left: 20%; */
+}
+#Hello{
+background-color: rgb(224, 219, 219);
+margin-left: 450%;
+margin-top: 10%;
+border: 1px solid transparent;
+width: 1%;
+height: 40%;
+}
+#Hello1{
+background-color: rgb(224, 219, 219);
+margin-left: 450%;
+margin-top: 10%;
+border: 1px solid transparent;
+width: 1%;
+height: 40%;
+}
+#or2{
+margin-left: 445%;
+}
+#google{
+cursor: pointer;
+width: 30%;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+display: flex;
+border: 1px solid transparent;
+margin-top: 10%;
+}
+#google>img{
+    margin-top: 10px;
+    margin-right: 10px;
+height: 30px;
+}
