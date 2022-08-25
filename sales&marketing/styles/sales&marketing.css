@@ -1,0 +1,72 @@
+.div{
+    display: flex;
+    gap: 30px;
+    
+    width: 80%;
+    margin-bottom: -80px;
+}
+.cards{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: -50vh;
+    width: 90%;
+    margin: auto;
+    height: 35vh;
+    margin-top: 40px;
+    
+}
+#gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    width: 95%;
+    margin: auto;
+   
+    
+    
+
+}
+.bdiv{
+    margin-bottom: 10px;
+    margin: auto;
+
+    border-top: 1px solid #d8d8e0;
+    width: 90%;
+    height: 60px;
+    margin-top: 80px;
+}
+img{
+    height:8vh;
+    border-radius: 50px ;
+}
+.div1{
+    margin-left: 20px;
+}
+.buyBtn{
+     margin-left: 220px;
+     margin-top: 10px;
+    
+    border: none;
+    background-color: #7c44ff;
+    color: white;
+    border-radius: 5px; 
+    padding: 5px 15px;
+    font-weight: bolder;
+}
+.explrBtn{
+    border: none;
+    background-color: transparent;
+    font-weight: bolder;
+    color: #7c44ff;
+    
+    
+}
+
+
+
+.provider{
+    margin-bottom: -12px;
+}
+
+.name{
+    margin-bottom: 30px;
+}
