@@ -1,6 +1,6 @@
 #upper{
     margin: auto;
-   width: 80%; 
+   width: 70%; 
    border: 1px solid white;
    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
    height: 100%
@@ -80,7 +80,7 @@ margin-top: -2%;
 }
 #upload{
 cursor: pointer;
-width: 10%;
+width: 15%;
 margin: auto;
 font-weight: bold;
 border: 1px solid blueviolet;
@@ -102,6 +102,18 @@ margin-top: 1%;
 color: blueviolet;
 text-decoration: none;
 }
+#hover{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+#hover>img{
+    height: 20px;
+}
+#hover>p{
+    margin-top: 0px;
+}
 #register{
 border-radius: 5px;
 cursor: pointer;
@@ -109,12 +121,22 @@ font-size: 18px;
 color: white;
 font-weight: bold;
 border: 1px solid transparent;
-margin-left: 33%;
+margin-left: 35%;
 margin-top: 1%;
 margin-bottom: 3%;
 padding: 10px 20px;
 text-align: center;
 background-color: #8652ff;
+}
+#alt{
+    width: 100%;
+    border: 1px solid transparent;
+    margin-bottom: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#alt>img{
+    margin-left: 5%;
+    height: 50px;
 }
 #flex{
 display: grid;
@@ -158,4 +180,97 @@ margin-top: 10%;
     margin-top: 10px;
     margin-right: 10px;
 height: 30px;
+}
+@media screen and (min-width:220px) and (max-width:480px){
+    #link1{
+        margin-left: -20%;
+    }
+    #upper{
+        margin: auto;
+       width: 90%; 
+       border: 1px solid white;
+       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       height: 100%
+    }
+    #form{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 70%;
+        height: 10%;
+        margin-left: 4%;
+        /* margin: auto; */
+        }
+        #google{
+            cursor: pointer;
+            width: 55%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display: flex;
+            border: 1px solid transparent;
+            margin-top: 10%;
+            }
+            #google>p{
+                width: 30%;
+            }
+            #form>input{
+                width: 70%;
+                padding: 10px 20px;
+                margin: 20px 12px;
+                margin-left: -5px;
+                }
+                #Hello{
+                    background-color: rgb(224, 219, 219);
+                    margin-left: 350%;
+                    margin-top: 10%;
+                    border: 1px solid transparent;
+                    width: 1%;
+                    height: 40%;
+                    }
+                    #Hello1{
+                    background-color: rgb(224, 219, 219);
+                    margin-left: 350%;
+                    margin-top: 10%;
+                    border: 1px solid transparent;
+                    width: 1%;
+                    height: 40%;
+                    }
+}
+@media screen and (min-width:480px) and (max-width:780px){
+    #upper{
+        margin: auto;
+       width: 80%; 
+       border: 1px solid white;
+       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       height: 100%
+    }
+    #form{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 60%;
+        height: 10%;
+        margin-left: 4%;
+        /* margin: auto; */
+        }
+}
+@media screen and (min-width:780px) and (max-width:1200px){
+    #upper{
+        margin: auto;
+       width: 80%; 
+       border: 1px solid white;
+       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       height: 100%
+    }
+    #google{
+        cursor: pointer;
+        width: 45%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        display: flex;
+        border: 1px solid transparent;
+        margin-top: 10%;
+        }
+        #form>input{
+            width: 70%;
+            padding: 10px 20px;
+            margin: 20px 12px;
+            margin-left: -5px;
+            }
 }
