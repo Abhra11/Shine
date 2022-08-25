@@ -1,0 +1,75 @@
+#loggoo>div>img{
+height: 40px;
+}
+#loggoo{
+    margin-left: 7%;
+    margin-top: 8%;
+}
+#loggoo>div{
+    font-weight: bold;
+    cursor: pointer;
+    padding: 3px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    border: 1px solid transparent;
+    color: rgb(107, 106, 106);
+    width: 120%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#loggoo>div>p{
+    margin-top: 2%;
+    margin-left: 7%;
+}
+#login11{
+    border-radius: 10px;
+     width: 70%;
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: auto;
+    margin-top: 5%;
+}
+#login11>div:nth-child(1)>h1{
+    margin-left: 10%;
+    margin-top: 8%;
+}
+#login11>div:nth-child(1)>input{
+    margin: 10px 40px;
+    margin-left: 10%;
+    padding: 10px 20px;
+ width: 60%;
+}
+#login11>div:nth-child(1)>button{
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    width: 70%;
+    margin-left: 10%;
+    background-color: #7b43fc;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+}
+#login11>div:nth-child(1)>#otp1{
+    color: #7b43fc;
+    background-color: white;
+    border: 1px solid #7b43fc;
+    margin-bottom: 14%;
+}
+#login11>div:nth-child(1)>p{
+    color: #7b43fc;
+   
+    margin-left: 55%;
+}
+#login11>div:nth-child(1)>#or4{
+    margin-left: 44%;
+}
+#hori{
+    border: 2px solid rgb(234, 232, 232);
+    background-color: rgb(224, 218, 218);
+   margin-top: 8%;
+    width: 0px;
+    height: 300px;
+}
