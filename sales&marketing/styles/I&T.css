@@ -147,6 +147,19 @@ img{
 }
 h4{
     margin-left: 25px;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #38404c ;
+}
+h2{
+    font-family: sans-serif;
+    font-size: 20px;
+    color:#38404c ;
+}
+p{
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #707c86;
 }
 
   
