@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/I&T.css">
+</head>
+<body>
+
+
+    <div id="dropDown">
+        <div><h2>14 Courses Found</h2></div>
+
+        <div>
+            <select name="" id="drop" onclick="drop()">
+                <option value="">Category</option>
+            </select>
+        </div>
+        
+    </div>
+    
+
+    <div id="popup">
+        <div id="heading">
+            <h1>Sort and Filters</h1>
+            <h1 id="close" onclick="closee()">X</h1>
+        </div>
+       
+        <div id="sort">
+            <p>Sort by price</p>
+            <input type="checkbox" class="check" value="false">
+            <p>High to Low</p>
+            <input type="checkbox" class="check" value="false"> 
+            <p> Low to High</p>
+
+        </div>
+        
+
+        <h4>Category</h4>
+        <div class="filter">
+            <input type="checkbox" class="filter_check" value="true" checked="checked">
+            <p>Sales & Price</p>
+
+           
+        </div>
+
+        <div class="filter">
+            <input type="checkbox" class="filter_check" value="false" >
+            <p>Information and Technology</p>
+        </div>    
+    </div>
+
+
+    <div id="gallery"></div>
+</body>
+</html>
+<script src="./scripts/I&T.js"></script>

@@ -243,7 +243,7 @@ let data=[
         dura.innerText=`Duration: ${ele.duration} | Mode: Online`;
 
         let price= document.createElement('h2');
-        price.textContent=ele.price;
+        price.textContent=`₹${ele.price}`;
 
         let course=document.createElement('p');
         course.innerText='Course'
