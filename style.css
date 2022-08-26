@@ -11,6 +11,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
 }
 #top_nav li{
      list-style: none;
@@ -55,6 +58,9 @@
     border: 1px solid transparent;
     height: 70px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    position: sticky;
+    top: 83px;
+    background-color: #fff;
 }
  
 .leftPart{
@@ -211,7 +217,7 @@
     
     width: 100%;
     margin: auto;
-  
+    margin-top: 5px;
   
   
 }
@@ -219,3 +225,39 @@
     width: 100%;
     
 }
+#ACD{
+    /* border: 1px solid red; */
+    width: 30%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 50px;
+    
+}
+#ACD>div>div{
+/* border: 1px solid black; */
+
+padding: 10px;
+}
+#ACD img {
+    border: 1px solid red;
+    border-radius: 50%;
+}
+ #company{
+    border: 1px solid black;
+    margin-top: 50px;
+ }
+ #company_button{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+ }
+ #company_button div{
+    border: 1px solid blue;
+    margin-right: 40px;
+ }
+ #company_img{
+    width: 80%;
+    display: flex;
+
+ }
