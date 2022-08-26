@@ -2,7 +2,7 @@
     display: flex;
     gap: 30px;
     
-    width: 80%;
+    width: 95%;
     margin-bottom: -80px;
 }
 .cards{
@@ -18,7 +18,7 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     
-    width: 95%;
+    width: auto;
     margin: auto;
    
     
@@ -70,3 +70,95 @@ img{
 .name{
     margin-bottom: 30px;
 }
+
+#sort{
+    display: flex;
+    justify-content: space-around;
+    
+    
+    background-color: #fafaff ;
+    
+}
+
+.check{
+    
+    margin-right: -40px;
+    
+
+}
+.filter{
+    display: flex;
+}
+#popup{
+    
+    width: 30%;
+    
+    
+    margin-top:100px;
+    position:absolute;
+    
+    margin-left: 500px;
+    background-color: white;
+    border-radius: 10px;
+    
+
+    
+    
+  
+}
+#heading{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+#dropDown{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#btn{
+    display: flex;
+    justify-content: space-around;
+}
+#btn1{
+    border: none;
+    background: transparent;
+    color:#7c44ff ;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+#btn2{
+    padding: 8px 15px;
+    border: none;
+    background-color: #7c44ff;
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+.filter{
+    margin-left: 25px;
+}
+h4{
+    margin-left: 25px;
+}
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 

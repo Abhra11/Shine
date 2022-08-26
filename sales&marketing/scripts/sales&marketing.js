@@ -145,9 +145,77 @@ let data=[
     }
     
   ]
+  let gallery=document.getElementById('gallery');
+  let popup=document.getElementById('popup');
+  popup.innerHTML=null;
+  let dropDown=document.getElementById('dropDown');
+  let drop=()=>{
+    dropDown.innerHTML=null;
+    popup.innerHTML=` <div id="heading">
+    <h1>Sort and Filters</h1>
+    <h1 id="close" onclick="closee()">✖</h1>
+  </div>
+
+  <div id="sort">
+    <p>Sort by price</p>
+    <input type="checkbox" class="check" value="false">
+    <p>High to Low</p>
+    <input type="checkbox" class="check" value="false"> 
+    <p> Low to High</p>
+
+  </div>
+
+
+  <h4>Category</h4>
+  <div class="filter">
+    <input type="checkbox" class="filter_check" value="hi" checked="checked">
+    <p>Sales & Marketing</p>
+
+   
+  </div>
+
+  <div class="filter">
+    <input type="checkbox" class="filter_check" value="hello" >
+    <p>Information and Technology</p>
+  </div>
+  
+  <div id="btn">
+    <button id="btn1">Reset</button>
+    <button id="btn2" onclick="results()">Show Results</button>
+  
+  </div>`
 
   
-  let gallery=document.getElementById('gallery')
+  gallery.style.backgroundColor="rgba(0,0,0,0.8)";
+  
+ 
+  gallery.style.opacity="0.5";
+  popup.style.zIndex="1";
+  }
+
+ let closee=()=>{
+  popup.innerHTML=null;
+  gallery.style.backgroundColor="white";
+  
+ 
+  gallery.style.opacity="";
+  dropDown.innerHTML=` <div id="dropDown">
+  <div><h2>13 Courses Found</h2></div>
+
+  <div>
+      <select name="" id="drop" onclick="drop()">
+          <option value="">Category</option>
+      </select>
+  </div>
+  
+</div>`
+
+ }
+ 
+  
+
+  
+  
   let append=(data)=>{
     data.forEach((ele)=>{
         let name= document.createElement('h2');
@@ -210,3 +278,8 @@ let data=[
     })
   }
   append(data);
+
+  let results=()=>{
+    let category=document.getElementsByClassName('filter').value ;
+    console.log(category)
+  }
