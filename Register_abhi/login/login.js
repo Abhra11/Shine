@@ -29,7 +29,6 @@ let pageReplace=()=>{
     btn2.style.marginBottom="15%";
     div.append(h,in1,btn,p,btn2);
     cont.append(div);
-    console.log("hello")
 }
 let place=()=>{
     return `<div>
