@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="image" id="img">
+    <input type="text" placeholder="name" id="name">
+    <input type="number" placeholder="rating" id="rate">
+    <input type="text" placeholder="category" id="cat">
+    <input type="text" placeholder="provider" id="pro">
+    <input type="text" placeholder="skills" id="skill">
+    <input type="text" placeholder="price" id="price">
+    <input type="text" placeholder="duration" id="dur">
+    <button onclick="submit()">Submit</button>
+</body>
+</html>
+<script>
+    let submit=async ()=>{
+
+        let data={
+            image:document.getElementById('img').value ,
+            name:document.getElementById('name').value,
+            rating:+document.getElementById('rate').value ,
+            category:document.getElementById('cat').value ,
+            provider: document.getElementById('pro').value,
+            skill: document.getElementById('skill').value,
+            duration:document.getElementById('dur').value,
+            price:+document.getElementById('price').value
+        }
+
+
+        let res=await fetch('http://localhost:3000/api/data2',{
+            method:"POST",
+            body:JSON.stringify(data),
+            headers:{
+                "Content-Type":"application/json"
+            }
+        })
+        
+    }
+</script>

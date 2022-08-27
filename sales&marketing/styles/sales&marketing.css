@@ -1,0 +1,202 @@
+.div{
+    display: flex;
+    gap: 30px;
+    
+    width: 95%;
+    margin-bottom: -80px;
+}
+.cards{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: -50vh;
+    width: 90%;
+    margin: auto;
+    height: 35vh;
+    margin-top: 40px;
+    
+}
+#gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    width: auto;
+    margin: auto;
+   
+    
+    
+
+}
+.bdiv{
+    margin-bottom: 10px;
+    margin: auto;
+
+    border-top: 1px solid #d8d8e0;
+    width: 90%;
+    height: 60px;
+    margin-top: 80px;
+}
+img{
+    height:8vh;
+    border-radius: 50px ;
+}
+.div1{
+    margin-left: 20px;
+}
+.buyBtn{
+     margin-left: 220px;
+     margin-top: 10px;
+    
+    border: none;
+    background-color: #7c44ff;
+    color: white;
+    border-radius: 5px; 
+    padding: 5px 15px;
+    font-weight: bolder;
+}
+.explrBtn{
+    border: none;
+    background-color: transparent;
+    font-weight: bolder;
+    color: #7c44ff;
+    
+    
+}
+
+
+
+.provider{
+    margin-bottom: -12px;
+}
+
+.name{
+    margin-bottom: 30px;
+}
+
+#sort{
+    display: flex;
+    justify-content: space-around;
+    
+    
+    background-color: #fafaff ;
+    
+}
+
+.check{
+    
+    margin-right: -40px;
+    
+
+}
+.filter{
+    display: flex;
+}
+#popup{
+    
+    width: 30%;
+    
+    
+    margin-top:100px;
+    position:absolute;
+    
+    margin-left: 500px;
+    background-color: white;
+    border-radius: 10px;
+    
+
+    
+    
+  
+}
+#heading{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+#dropDown{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#btn{
+    display: flex;
+    justify-content: space-around;
+}
+#btn1{
+    border: none;
+    background: transparent;
+    color:#7c44ff ;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+#btn2{
+    padding: 8px 15px;
+    border: none;
+    background-color: #7c44ff;
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+.filter{
+    margin-left: 25px;
+}
+h5{
+    margin-left: 25px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #38404c ;
+}
+h2{
+    font-family: sans-serif;
+    font-size: 20px;
+    color:#38404c ;
+}
+p{
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #707c86;
+}
+#dFilter{
+    display: flex;
+    gap: 30px;
+    margin-right: 250px;
+    
+    
+}
+
+.drop{
+    padding: 0px 10px;
+    font-size: 14px;
+    font-family: "PT Sans", sans-serif;
+    color: #38404c;
+    border-radius: 5px;
+    border-color:#c1c1cd ;
+}
+
+#filter_btn{
+    padding: 0px 10px;
+    font-size: 14px;
+    font-family: "PT Sans", sans-serif;
+    border-radius: 5px;
+    background-color: transparent;
+    border-color:#c1c1cd ;
+    color: #7c44ff;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
