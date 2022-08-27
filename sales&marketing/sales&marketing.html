@@ -11,10 +11,18 @@
     <div id="dropDown">
         <div><h2>13 Courses Found</h2></div>
 
-        <div>
-            <select name="" id="drop" onclick="drop()">
+        <div id="dFilter">
+            <p>Filter by</p>
+            <select name="" class="drop" onclick="drop()">
                 <option value="">Category</option>
             </select>
+            <select name="" class="drop" onclick="drop()">
+                <option value="">Skills</option>
+            </select>
+            <select name="" class="drop" onclick="drop()">
+                <option value="">Provider</option>
+            </select>
+            <button id="filter_btn" onclick="drop()">More Filters</button>
         </div>
         
     </div>
@@ -39,14 +47,14 @@
         <h4>Category</h4>
         <div class="filter">
             <input type="checkbox" class="filter_check" value="true" checked="checked">
-            <p>Sales & Price</p>
+            <p>Sales & Price(13)</p>
 
            
         </div>
 
         <div class="filter">
             <input type="checkbox" class="filter_check" value="false" >
-            <p>Information and Technology</p>
+            <p>Information and Technology(14)</p>
         </div>    
     </div>
         

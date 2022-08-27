@@ -145,10 +145,10 @@ img{
 .filter{
     margin-left: 25px;
 }
-h4{
+h5{
     margin-left: 25px;
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     color: #38404c ;
 }
 h2{
@@ -161,7 +161,32 @@ p{
     font-size: 12px;
     color: #707c86;
 }
+#dFilter{
+    display: flex;
+    gap: 30px;
+    margin-right: 250px;
+    
+    
+}
 
+.drop{
+    padding: 0px 10px;
+    font-size: 14px;
+    font-family: "PT Sans", sans-serif;
+    color: #38404c;
+    border-radius: 5px;
+    border-color:#c1c1cd ;
+}
+
+#filter_btn{
+    padding: 0px 10px;
+    font-size: 14px;
+    font-family: "PT Sans", sans-serif;
+    border-radius: 5px;
+    background-color: transparent;
+    border-color:#c1c1cd ;
+    color: #7c44ff;
+}
   
   
   

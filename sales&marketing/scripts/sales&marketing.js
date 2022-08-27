@@ -322,17 +322,30 @@ let data=[
 
 
   <h4>Category</h4>
+
+  <div class="filter">
+  <input type="checkbox" class="filter_check" value="hello" >
+  <p>Interview Preperation (19)</p>
+  </div>
+
   <div class="filter">
     <input type="checkbox" class="filter_check" value="hi" checked="checked">
-    <p>Sales & Marketing</p>
+    <p>Sales & Marketing (13)</p>
 
    
   </div>
 
   <div class="filter">
     <input type="checkbox" class="filter_check" value="hello" >
-    <p>Information and Technology</p>
+    <p>Operation Management (69)</p>
   </div>
+
+  <div class="filter">
+    <input type="checkbox" class="filter_check" value="hello" >
+    <p>Information and Technology (14)</p>
+  </div>
+
+  
   
   <div id="btn">
     <button id="btn1">Reset</button>
@@ -354,16 +367,22 @@ let data=[
   
  
   gallery.style.opacity="";
-  dropDown.innerHTML=` <div id="dropDown">
+  dropDown.innerHTML=` 
   <div><h2>13 Courses Found</h2></div>
 
-  <div>
-      <select name="" id="drop" onclick="drop()">
+  <div id="dFilter">
+      <p>Filter by</p>
+      <select name="" class="drop" onclick="drop()">
           <option value="">Category</option>
       </select>
-  </div>
-  
-</div>`
+      <select name="" class="drop" onclick="drop()">
+          <option value="">Skills</option>
+      </select>
+      <select name="" class="drop" onclick="drop()">
+          <option value="">Provider</option>
+      </select>
+      <button id="filter_btn" onclick="drop()">More Filters</button>
+  </div>`
 
  }
  
@@ -380,7 +399,13 @@ let data=[
         let image= document.createElement('img');
         image.src=ele.image;
 
-        let rating= document.createElement('h4');
+        //  let strimg=document.createElement('img');
+        //  strimg.src="C:\Users\Sinner\Desktop\PRJCT_JS211\easy-bell-6862\sales&marketing\img\img.png"
+
+       
+        
+
+        let rating= document.createElement('h5');
         rating.textContent=`${ele.rating} ⭐`;
 
         let category=document.createElement('p');
@@ -444,16 +469,22 @@ let data=[
   
  
         gallery.style.opacity="1";
-        dropDown.innerHTML=` <div id="dropDown">
-  <div><h2>14 Courses Found</h2></div>
+        dropDown.innerHTML=` 
+        <div><h2>14 Courses Found</h2></div>
 
-  <div>
-      <select name="" id="drop" onclick="drop()">
-          <option value="">Category</option>
-      </select>
-  </div>
-  
-</div>`
+        <div id="dFilter">
+            <p>Filter by</p>
+            <select name="" class="drop" onclick="drop()">
+                <option value="">Category</option>
+            </select>
+            <select name="" class="drop" onclick="drop()">
+                <option value="">Skills</option>
+            </select>
+            <select name="" class="drop" onclick="drop()">
+                <option value="">Provider</option>
+            </select>
+            <button id="filter_btn" onclick="drop()">More Filters</button>
+        </div>`
         
     }
   }

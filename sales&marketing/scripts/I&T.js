@@ -356,16 +356,21 @@ let data2=[ {
   
  
   gallery.style.opacity="";
-  dropDown.innerHTML=` <div id="dropDown">
-  <div><h2>14 Courses Found</h2></div>
+  dropDown.innerHTML=`<div><h2>14 Courses Found</h2></div>
 
-  <div>
-      <select name="" id="drop" onclick="drop()">
+  <div id="dFilter">
+      <p>Filter by</p>
+      <select name="" class="drop" onclick="drop()">
           <option value="">Category</option>
       </select>
-  </div>
-  
-</div>`
+      <select name="" class="drop" onclick="drop()">
+          <option value="">Skills</option>
+      </select>
+      <select name="" class="drop" onclick="drop()">
+          <option value="">Provider</option>
+      </select>
+      <button id="filter_btn" onclick="drop()">More Filters</button>
+  </div>`
 
  }
 
@@ -434,6 +439,7 @@ let data2=[ {
 
   let results=()=>{
     let category=document.getElementsByClassName('filter').value ;
+    let x=1;
     if(category==undefined){
         gallery.innerHTML=null;
         append(data);
@@ -442,16 +448,21 @@ let data2=[ {
   
  
         gallery.style.opacity="1";
-        dropDown.innerHTML=` <div id="dropDown">
-  <div><h2>13 Courses Found</h2></div>
+        dropDown.innerHTML=`<div><h2>13 Courses Found</h2></div>
 
-  <div>
-      <select name="" id="drop" onclick="drop()">
-          <option value="">Category</option>
-      </select>
-  </div>
-  
-</div>`
+        <div id="dFilter">
+            <p>Filter by</p>
+            <select name="" class="drop" onclick="drop()">
+                <option value="">Category</option>
+            </select>
+            <select name="" class="drop" onclick="drop()">
+                <option value="">Skills</option>
+            </select>
+            <select name="" class="drop" onclick="drop()">
+                <option value="">Provider</option>
+            </select>
+            <button id="filter_btn" onclick="drop()">More Filters</button>
+        </div>`
         
     }
   }
