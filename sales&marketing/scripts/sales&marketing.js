@@ -145,7 +145,39 @@ let data=[
     }
     
   ]
-
+let tData=[{
+  "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1571122840_1793.png&w=1080&q=75",
+  "name": "Issue Negotiation Skills",
+  "rating": 4.5,
+  "category": "Sales & Marketing",
+  "provider": "Shine Learning",
+  "skill": "Sales",
+  "duration": "3 Month",
+  "price": 9999,
+  "id": 11
+},
+{
+  "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1509282366_6812.png&w=1080&q=75",
+  "name": "Distribution Manager",
+  "rating": 5,
+  "category": "Sales & Marketing",
+  "provider": "Vskills",
+  "skill": "Manager",
+  "duration": "12 hr",
+  "price": 3499,
+  "id": 12
+},
+{
+  "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1542800087_8980.png&w=1080&q=75",
+  "name": "Digital Marketing Certification",
+  "rating": 4.5,
+  "category": "Sales & Marketing",
+  "provider": "Edureka",
+  "skill": "Marketing",
+  "duration": "30 hrs",
+  "price": 19995,
+  "id": 13
+}];
   let data2=[ {
     "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1508147934_5947.png&w=1920&q=75",
     "name": "HTML Designer",
@@ -300,8 +332,46 @@ let data=[
     "price": 5699,
     "id": 15
   }];
+
+  let tData2=[{
+    "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1509436943_7116.png&w=1080&q=75",
+    "name": "Wordpress Developer",
+    "rating": 4.5,
+    "category": "Developer",
+    "provider": "Vskills",
+    "skill": "Developer",
+    "duration": "14hr",
+    "price": 3499,
+    "id": 13
+  },
+  {
+    "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1509437042_2591.png&w=1080&q=75",
+    "name": "iPhone Apps Developer",
+    "rating": 4.5,
+    "category": "Information and Technology",
+    "provider": "Vskills",
+    "skill": "Developer",
+    "duration": "69 hr",
+    "price": 6969,
+    "id": 14
+  },
+  {
+    "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1509444669_3525.png&w=1080&q=75",
+    "name": "Python Developer",
+    "rating": 4.67,
+    "category": "Developer",
+    "provider": "Vskills",
+    "skill": "Developer",
+    "duration": "69 hr",
+    "price": 5699,
+    "id": 15
+  }];
+
+
   let gallery=document.getElementById('gallery');
+  let tGallery=document.getElementById('tGallery');
   let popup=document.getElementById('popup');
+  let middle=document.getElementById('middle');
   popup.innerHTML=null;
   let dropDown=document.getElementById('dropDown');
   let drop=()=>{
@@ -345,6 +415,16 @@ let data=[
     <p>Information and Technology (14)</p>
   </div>
 
+  <div class="filter">
+    <input type="checkbox" class="filter_check" value="hello" >
+    <p>Personal Development (70)</p>
+  </div>
+
+  <div class="filter">
+    <input type="checkbox" class="filter_check" value="hello" >
+    <p>HR - Human Resources (70)</p>
+  </div>
+
   
   
   <div id="btn">
@@ -355,20 +435,28 @@ let data=[
 
   
   gallery.style.backgroundColor="rgba(0,0,0,0.8)";
+  tGallery.style.backgroundColor="rgba(0,0,0,0.8)";
+  middle.style.backgroundColor="rgba(0,0,0,0.8)";
   
  
   gallery.style.opacity="0.5";
+  tGallery.style.opacity="0.5";
+  middle.style.opacity="0.5";
   popup.style.zIndex="1";
   }
 
  let closee=()=>{
   popup.innerHTML=null;
   gallery.style.backgroundColor="white";
+  tGallery.style.backgroundColor="white";
+  middle.style.backgroundColor="white";
   
  
   gallery.style.opacity="";
+  tGallery.style.opacity="";
+  middle.style.opacity="";
   dropDown.innerHTML=` 
-  <div><h2>13 Courses Found</h2></div>
+  <div><h2>17 Courses Found</h2></div>
 
   <div id="dFilter">
       <p>Filter by</p>
@@ -383,7 +471,7 @@ let data=[
       </select>
       <button id="filter_btn" onclick="drop()">More Filters</button>
   </div>`
-
+  
  }
  
   
@@ -398,6 +486,7 @@ let data=[
 
         let image= document.createElement('img');
         image.src=ele.image;
+        image.setAttribute('class','image')
 
         //  let strimg=document.createElement('img');
         //  strimg.src="C:\Users\Sinner\Desktop\PRJCT_JS211\easy-bell-6862\sales&marketing\img\img.png"
@@ -445,7 +534,10 @@ let data=[
 
         let buy=document.createElement('button');
         buy.textContent="Buy Now";
-        buy.setAttribute('class','buyBtn')
+        buy.setAttribute('class','buyBtn');
+        buy.onclick=()=>{
+          addCart(ele);
+        }
         
 
         
@@ -457,20 +549,100 @@ let data=[
         gallery.append(cards);
     })
   }
+
+  let append2=(data)=>{
+    data.forEach((ele)=>{
+        let name= document.createElement('h2');
+        name.textContent=ele.name;
+        name.setAttribute('class','name')
+
+        let image= document.createElement('img');
+        image.src=ele.image;
+        image.setAttribute('class','image')
+
+        //  let strimg=document.createElement('img');
+        //  strimg.src="C:\Users\Sinner\Desktop\PRJCT_JS211\easy-bell-6862\sales&marketing\img\img.png"
+
+       
+        
+
+        let rating= document.createElement('h5');
+        rating.textContent=`${ele.rating} ⭐`;
+
+        let category=document.createElement('p');
+        category.textContent=ele.category;
+
+        let provider=document.createElement('p');
+        provider.textContent=ele.provider;
+        provider.setAttribute('class','provider');
+
+        let skill=document.createElement('p');
+        skill.innerText=ele.skill;
+        
+
+        let dura=document.createElement('p');
+        dura.innerText=`Duration: ${ele.duration} | Mode: Online`;
+
+        let price= document.createElement('h2');
+        price.textContent=`₹${ele.price}`;
+
+        let course=document.createElement('p');
+        course.innerText='Course'
+
+        let cards=document.createElement('div');
+        cards.setAttribute('class','cards')
+        
+        let div= document.createElement('div');
+        div.setAttribute('class','div')
+        let div1= document.createElement('div');
+        div1.setAttribute('class','div1')
+
+        let div2= document.createElement('div');
+        let bdiv=document.createElement('div');
+        bdiv.setAttribute('class',"bdiv");
+        let explore=document.createElement('button');
+        explore.textContent="Explore";
+        explore.setAttribute('class','explrBtn')
+
+        let buy=document.createElement('button');
+        buy.textContent="Buy Now";
+        buy.setAttribute('class','buyBtn');
+        buy.onclick=()=>{
+           addCart(ele);
+          
+        }
+        
+
+        
+        div1.append(course,image, rating)
+        div2.append(name,  provider, dura , price);
+        bdiv.append(explore,buy)
+        div.append(div1,div2)
+        cards.append(div,bdiv)
+        tGallery.append(cards);
+    })
+  }
   append(data);
+  append2(tData)
+
 
   let results=()=>{
     let category=document.getElementsByClassName('filter').value ;
     if(category==undefined){
         gallery.innerHTML=null;
+        tGallery.innerHTML=null;
         append(data2);
+        append2(tData2)
         popup.innerHTML=null;
         gallery.style.backgroundColor="white";
-  
+        tGallery.style.backgroundColor="white";
+        middle.style.backgroundColor='white';
  
         gallery.style.opacity="1";
+        tGallery.style.opacity="1";
+        middle.style.opacity="1";
         dropDown.innerHTML=` 
-        <div><h2>14 Courses Found</h2></div>
+        <div><h2>16 Courses Found</h2></div>
 
         <div id="dFilter">
             <p>Filter by</p>
@@ -488,3 +660,15 @@ let data=[
         
     }
   }
+
+  let arr=JSON.parse(localStorage.getItem("cartData"))||[];
+  let addCart=(ele)=>{
+   arr.push(ele);
+   localStorage.setItem('cartData',JSON.stringify(arr))
+  }
+
+  // let addCart2=(ele)=>{
+  //   // arr.push(ele);
+  //   // localStorage.setItem('cartData',JSON.stringify(arr))
+  //   console.log('hi')
+  //  }
