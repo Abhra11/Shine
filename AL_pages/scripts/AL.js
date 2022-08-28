@@ -241,10 +241,11 @@ function appliedFun(){
 let arr = JSON.parse(localStorage.getItem("userData"))||[];
 console.log(arr)
 arr.forEach((el)=>{
+ 
     let user=document.getElementById("userName");
     user.innerText=el.name;
 
 })
-user.innerText= arr.name;
-console.log(arr.name)
+// user.innerText= arr.name;
+// console.log(arr.name)
 
