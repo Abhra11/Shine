@@ -1,31 +1,17 @@
-let arr=[{
-    name:"Java Backened Developer",
-    price:3300,
-},
-{
-    name:"Java Backened Developer",
-    price:4300,
-},
-{
-    name:"Java Backened Developer",
-    price:3600,
-},
-{
-    name:"Java Backened Developer",
-    price:3900,
-}];
+let arr=JSON.parse(localStorage.getItem("cartData"))||[];
 
 let Total_Price=0;
   let nav=()=>{
     return `<img src="https://learning.shine.com/_next/image?url=%2Fimages%2Fno-item-cart.png&w=128&q=75" alt="">
     <h3>No Items in Cart</h3>
     <p>Keep exploring to find a course for you</p>
-    <button style="cursor: pointer">Explore Now!</button>`
+    <button style="cursor: pointer" id="explore">Explore Now!</button>`
   }
-  
+
   if(arr.length===0){
     let cont = document.querySelector("#cart11");
     cont.innerHTML=nav();
+   
 } else {
     let displayData = (arr)=>{
         arr.forEach((el,index)=>{
@@ -51,7 +37,7 @@ let Total_Price=0;
            img.style.marginLeft="80%"
            img.style.marginTop="9%"
            img.addEventListener("click",()=>{
-               remove(index,displayData(arr));
+               remove(index);
            })
            img.src="https://tse1.mm.bing.net/th?id=OIP.zO9872glOfr8mjsUiekwUAHaIL&pid=Api&P=0";
            div2.append(img);
@@ -95,14 +81,15 @@ let Total_Price=0;
     }
     get(Total_Price);
  let remove = (i)=>{
+    console.log("hello");
     arr.splice(i,1);
-    localStorage.setItem("cart",JSON.stringify(arr));
+    localStorage.setItem("cartData",JSON.stringify(arr));
     window.location.reload();
   }
   // let filtered = arr.filter((e,index)=>{
   //     return index!==i;
   // })
-  
+
 }
 
 let apply11 = ()=>{
@@ -113,4 +100,11 @@ let apply11 = ()=>{
    let gg = document.querySelector("#fgffg");
    gg.innerText=`Total Payable:- ${Total_Price}`;
    document.querySelector("#in1").value="";
+ }
+ 
+ document.querySelector("#explore").addEventListener("click",()=>{
+    gopage();
+ })
+ let gopage = ()=>{
+   window.location.href="";
  }
