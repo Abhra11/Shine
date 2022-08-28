@@ -372,6 +372,9 @@ let tData=[{
   let tGallery=document.getElementById('tGallery');
   let popup=document.getElementById('popup');
   let middle=document.getElementById('middle');
+  let topNav1=document.getElementById('top_nav')
+  let topNav2=document.getElementById('top_nav2');
+  let footer=document.getElementById('footer');
   popup.innerHTML=null;
   let dropDown=document.getElementById('dropDown');
   let drop=()=>{
@@ -437,12 +440,19 @@ let tData=[{
   gallery.style.backgroundColor="rgba(0,0,0,0.8)";
   tGallery.style.backgroundColor="rgba(0,0,0,0.8)";
   middle.style.backgroundColor="rgba(0,0,0,0.8)";
+  topNav1.style.backgroundColor="rgba(0,0,0,0.8)";
+  topNav2.style.backgroundColor="rgba(0,0,0,0.8)";
+  footer.style.backgroundColor="rgba(0,0,0,0.8)";
   
  
   gallery.style.opacity="0.5";
   tGallery.style.opacity="0.5";
   middle.style.opacity="0.5";
+  topNav1.style.opacity="0.5";
+  topNav2.style.opacity="0.5";
+  footer.style.opacity="0.5";
   popup.style.zIndex="1";
+
   }
 
  let closee=()=>{
@@ -450,11 +460,18 @@ let tData=[{
   gallery.style.backgroundColor="white";
   tGallery.style.backgroundColor="white";
   middle.style.backgroundColor="white";
+  topNav1.style.backgroundColor="white";
+  topNav2.style.backgroundColor="white";
+  footer.style.backgroundColor="white";
   
  
   gallery.style.opacity="";
   tGallery.style.opacity="";
+  footer.style.opacity="";
+
   middle.style.opacity="";
+  topNav1.style.opacity="";
+  topNav2.style.opacity="";
   dropDown.innerHTML=` 
   <div><h2>17 Courses Found</h2></div>
 
@@ -637,10 +654,16 @@ let tData=[{
         gallery.style.backgroundColor="white";
         tGallery.style.backgroundColor="white";
         middle.style.backgroundColor='white';
+        topNav1.style.backgroundColor="white";
+        topNav2.style.backgroundColor="white";
+        footer.style.backgroundColor="white";
  
         gallery.style.opacity="1";
         tGallery.style.opacity="1";
         middle.style.opacity="1";
+        topNav1.style.opacity="1"
+        topNav2.style.opacity="1"
+        footer.style.opacity="1";
         dropDown.innerHTML=` 
         <div><h2>16 Courses Found</h2></div>
 
