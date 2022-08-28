@@ -1,0 +1,158 @@
+{
+  "data2": [
+    {
+      "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1508147934_5947.png&w=1920&q=75",
+      "name": "HTML Designer",
+      "rating": 4.5,
+      "category": "Information and Technology",
+      "provider": "Vskills",
+      "skill": "Designer",
+      "duration": "13 hrs",
+      "price": 3499,
+      "id": 2
+    },
+    {
+      "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1509558215_9064.png&w=1920&q=75",
+      "name": "CSS Designer",
+      "rating": 4.5,
+      "category": "Information and Technology",
+      "provider": "Vskills",
+      "skill": "Designer",
+      "duration": "13 hrs",
+      "price": 3499,
+      "id": 3
+    },
+    {
+      "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1509340449_60.png&w=1920&q=75",
+      "name": "CSS3 Developer",
+      "rating": 4.5,
+      "category": "Information and Technology",
+      "provider": "Vskills",
+      "skill": "Developer",
+      "duration": "12 hrs",
+      "price": 3499,
+      "id": 4
+    },
+    {
+      "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1509540334_828.png&w=1080&q=75",
+      "name": "IT Support Professional",
+      "rating": 3,
+      "category": "Information and Technology",
+      "provider": "Vskills",
+      "skill": "Support",
+      "duration": "15 hr",
+      "price": 3499,
+      "id": 5
+    },
+    {
+      "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1509455067_550.png&w=1080&q=75",
+      "name": "Technical Analyst",
+      "rating": 4,
+      "category": "Information and Technology",
+      "provider": "Vskills",
+      "skill": "Analyst",
+      "duration": "13 hr",
+      "price": 2499,
+      "id": 6
+    },
+    {
+      "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1508172101_5505.png&w=1080&q=75",
+      "name": "Software Testinf",
+      "rating": 3,
+      "category": "Information and Technology",
+      "provider": "Vskills",
+      "skill": "Developer",
+      "duration": "13 hr",
+      "price": 5499,
+      "id": 7
+    },
+    {
+      "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1513230301_1973.png&w=1080&q=75",
+      "name": "Microsoft Office Specialist - Office 2010",
+      "rating": 3.5,
+      "category": "Information and Technology",
+      "provider": "skillsoft",
+      "skill": "Developer",
+      "duration": "372 days",
+      "price": 42650,
+      "id": 8
+    },
+    {
+      "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1509350957_5161.png&w=1080&q=75",
+      "name": "CCNA Voice Professional",
+      "rating": 4.5,
+      "category": "Information and Technology",
+      "provider": "skillsoft",
+      "skill": "IT",
+      "duration": "372 days",
+      "price": 14630,
+      "id": 9
+    },
+    {
+      "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1509439233_2761.png&w=1080&q=75",
+      "name": "Ubuntu Professional",
+      "rating": 4.5,
+      "category": "Information and Technology",
+      "provider": "Vskills",
+      "skill": "Developer",
+      "duration": "18 hrs",
+      "price": 3499,
+      "id": 10
+    },
+    {
+      "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1509445807_5735.png&w=1080&q=75",
+      "name": "Core Java",
+      "rating": 4.5,
+      "category": "Information and Technology",
+      "provider": "361dm",
+      "skill": "Developer",
+      "duration": "9 Weeks",
+      "price": 5750,
+      "id": 11
+    },
+    {
+      "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1509444529_9357.png&w=1080&q=75",
+      "name": "Core Java Developer",
+      "rating": 5,
+      "category": "Developer",
+      "provider": "Vskills",
+      "skill": "Developer",
+      "duration": "16 hr",
+      "price": 3499,
+      "id": 12
+    },
+    {
+      "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1509436943_7116.png&w=1080&q=75",
+      "name": "Wordpress Developer",
+      "rating": 4.5,
+      "category": "Developer",
+      "provider": "Vskills",
+      "skill": "Developer",
+      "duration": "14hr",
+      "price": 3499,
+      "id": 13
+    },
+    {
+      "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1509437042_2591.png&w=1080&q=75",
+      "name": "iPhone Apps Developer",
+      "rating": 4.5,
+      "category": "Information and Technology",
+      "provider": "Vskills",
+      "skill": "Developer",
+      "duration": "69 hr",
+      "price": 6969,
+      "id": 14
+    },
+    {
+      "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1509444669_3525.png&w=1080&q=75",
+      "name": "Python Developer",
+      "rating": 4.67,
+      "category": "Developer",
+      "provider": "Vskills",
+      "skill": "Developer",
+      "duration": "69 hr",
+      "price": 5699,
+      "id": 15
+    }
+  ]
+}

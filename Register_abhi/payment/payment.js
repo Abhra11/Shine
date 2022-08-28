@@ -1,5 +1,6 @@
 let order = ()=>{
     alert("Order is successful");
+<<<<<<< HEAD
 }
 let show = ()=>{
     let cont = document.querySelector("#paymentMethod");
@@ -47,3 +48,7 @@ let body = ()=>{
     body.append(btn);
 }
 body();
+=======
+    window.location.href='../../AL_pages/AL_landing.html'
+}
+>>>>>>> c1579c44110d00ecaadc697c437a93aa0f4c8bce
