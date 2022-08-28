@@ -324,19 +324,22 @@ padding: 10px;
  #BAEA>h1{
     width: fit-content;
     margin: auto;
-    font-size: 50px;
+    font-size: 40px;
  }
  
  .cards_top{
     border: 1px solid transparent;
     display: flex;
     justify-content: space-between;
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 10px;
  }
  .cards_title{
     border: 1px solid transparent;
     margin-bottom: 20px;
+ }
+ .cards_title>h1{
+   font-size: 28px;
  }
  .cards_company{
     /* border: 1px solid red; */
@@ -355,7 +358,7 @@ padding: 10px;
  }
  .swiper-slide{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-     height: 350px;
+     height: 380px;
     padding: 15px;
     margin-bottom: 10px;
 
@@ -363,7 +366,7 @@ padding: 10px;
  .cards_loc_exp{
     display: flex;
     
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 10px;
     color: rgb(104, 102, 102);
     border: 1px solid transparent;
@@ -412,7 +415,7 @@ padding: 10px;
  #walking>h1{
     width: fit-content;
     margin: auto;
-    font-size: 50px;
+    font-size: 40px;
  }
  #search_create{
   border: 1px solid transparent;
@@ -422,7 +425,7 @@ padding: 10px;
  #search_create>h1{
     width: fit-content;
     margin: auto;
-    font-size: 50px;
+    font-size: 40px;
  }
  #s_main{
     width: 55%;
@@ -448,7 +451,7 @@ padding: 10px;
  #premium>h1{
     width: fit-content;
     margin: auto;
-    font-size: 50px;
+    font-size: 40px;
  }
  .premium{
     height: 480px;
@@ -461,6 +464,7 @@ padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
+    font-size: 28px;
  }
  .premium>p{
     width: fit-content;
@@ -481,7 +485,7 @@ padding: 10px;
  }
  .premium>div>span:first-child{
     color: #5d4da8;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     margin-left: 20px;
     margin-bottom: 50px;
@@ -489,7 +493,7 @@ padding: 10px;
  }
  .premium>div>span:last-child{
     background-color: #5d4da8;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     margin-left: 20px;
     margin-bottom: 50px;
@@ -504,7 +508,7 @@ padding: 10px;
  #popular_courses>h1{
     width: fit-content;
     margin: auto;
-    font-size: 50px;
+    font-size: 40px;
  }
  .course{
     height: 350px;
@@ -513,6 +517,9 @@ padding: 10px;
  .course>div>img{
     border-radius: 50%;
     margin-right: 20px;
+ }
+ .course>div>h1{
+   font-size: 28px;
  }
  .course>p{
     border: 1px solid transparent;
@@ -528,7 +535,7 @@ padding: 10px;
  #blog>h1{
     width: fit-content;
     margin: auto;
-    font-size: 50px;
+    font-size: 40px;
  }
  .blog>img{
     width: 100%;
@@ -552,7 +559,7 @@ padding: 10px;
  #footer li{
     list-style: none;
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size:18px;
     color: #5d4da8;
  }
  #footer>div>p{
