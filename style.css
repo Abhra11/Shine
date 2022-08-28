@@ -2,6 +2,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
+
 }
 
 
@@ -42,7 +44,7 @@
    border-radius: 5px 0px 0px 5px;
    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
- #top_nav button{ 
+ #search{ 
    background-color: blueviolet;
    height:45px;
    width: 55px;
@@ -50,8 +52,38 @@
    color: white;
    border-radius: 0px 5px 5px 0px;
  }
-
-
+#login{
+   width: 100px;
+   height: 40px;
+   color: #5d4da8;
+   background-color: #fff;
+   border: 1px solid #5d4da8;
+   padding: 5px;
+   border-radius: 8px;
+}
+#login>a{
+   color: #5d4da8;
+   text-decoration: none;
+   font-weight: 600;
+   font-size: 18px;
+}
+ 
+#register{
+   width: 120px;
+   height: 40px;
+   color: #5d4da8;
+   background-color: #5d4da8;
+   border: 1px solid #5d4da8;
+ 
+   border-radius: 8px;
+}
+#register>a{
+   color: white;
+   text-decoration: none;
+   font-weight: 600;
+   font-size: 18px;
+   
+}
 
  #top_nav2{
     display: flex;
@@ -286,6 +318,7 @@ padding: 10px;
  }
  #BAEA{
     margin-top: 100px;
+    /* border: 1px solid red; */
 
  }
  #BAEA>h1{
@@ -313,10 +346,11 @@ padding: 10px;
  }
  .swiper{
     /* border: 1px solid red; */
-    width: 90%;
+    width: 95%;
     margin: auto;
     margin-top: 50px;
     padding:   0px 100px;
+    /* border: 1px solid red; */
     
  }
  .swiper-slide{
@@ -341,6 +375,9 @@ padding: 10px;
      font-size: 26px;
      display: flex;
      justify-content: flex-end;
+ }
+ .cards_btn>span:hover{
+   cursor: pointer;
  }
  .cards_loc_exp img{
     /* border: 1px solid red; */
@@ -433,16 +470,19 @@ padding: 10px;
     font-size: 22px;
  }
  .price_p{
-    font-weight: 700;
+    font-weight: 600;
  }
  .premium>div{
     display: flex;
     justify-content: space-between;
  }
+ .premium>div>span:hover{
+   cursor: pointer;
+ }
  .premium>div>span:first-child{
     color: #5d4da8;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 600;
     margin-left: 20px;
     margin-bottom: 50px;
     margin-top: 10px;
@@ -450,7 +490,7 @@ padding: 10px;
  .premium>div>span:last-child{
     background-color: #5d4da8;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 600;
     margin-left: 20px;
     margin-bottom: 50px;
     padding: 8px;
@@ -522,3 +562,4 @@ padding: 10px;
  #footer>div> div>img{
     margin-right: 40px;
  }
+ 
