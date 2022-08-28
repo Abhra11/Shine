@@ -36,6 +36,7 @@ class receive{
 if(isAvailable){
   arr.push(p);
   localStorage.setItem("userData",JSON.stringify(arr));
+  window.location.href='../login/login.html'
 } else {
  alert("This email is alreay store in Database");
 };
