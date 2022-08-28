@@ -69,3 +69,6 @@ let loginData = ()=>{
     document.querySelector("#email").value="";
     document.querySelector("#password").value="";
 }
+let nextPage = ()=>{
+    window.location.href="../register/register.html";
+}

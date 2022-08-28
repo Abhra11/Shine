@@ -66,6 +66,32 @@ height: 40px;
 #login11>div:nth-child(1)>#or4{
     margin-left: 44%;
 }
+#havenot{
+    background-color: #f3fbfd;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    /* margin-left: 20%; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#havenot>h1{
+    margin: 10px 30%;
+    margin-left: 23%;
+    /* padding-left: ; */
+    text-align: center;
+}
+#havenot>button{
+    background-color: #7b43fc;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-left: -28%;
+   margin-top: 10px;
+    width: 10%;
+    height: 35px;
+}
 #hori{
     border: 2px solid rgb(234, 232, 232);
     background-color: rgb(224, 218, 218);
