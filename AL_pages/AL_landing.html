@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/AL.css">
 </head>
 <body>
@@ -35,7 +36,7 @@
       <div id="count_show">
         <div class="count_div">
 <img class="count_img" src="./images/appeared.jpg" alt="">
-<div class="count_text"><h2 class="count_h2">0</h2><br><p class="count_p">Appeared to Recruiters</p></div>
+<div id="appeared" class="count_text"><h2 class="count_h2">0</h2><p class="count_p">Appeared to Recruiters</p></div>
         </div>
         <div class="count_div">
             <img class="count_img" src="./images/rq action.jpg" alt="">
@@ -54,7 +55,7 @@
       <div id="content_nav">
         <div id="left_nav">
 <h2 >Jobs for You</h2>
-<h3 id="recom">Recommended</h3>
+<h3 onclick="recom()" id="recom">Recommended</h3>
 <h3 id="alert">Job Alerts</h3>
 <h3 onclick="saveFun()" id="saved">Saved</h3>
 <h3 onclick="appliedFun()" id="applied">Applied</h3>
@@ -68,13 +69,87 @@
      <section id="chart">
       <img src="./images/chart.jpg" alt="">
     </section>
-    <div id="courses_recom">
-      <h3>Recommended Courses</h3>
-      <div id="courses">
-        <div id="leftarrow"><button>&lt;</button></div>
-        <div id="leftarrow"><button>&lt;</button></div>
-      </div>
-    </div>
+    <div id="popular_courses">
+ <h3 id\>Recommended Courses</h3>
+       
+          
+         <div class="swiper mySwiper">
+             <div class="swiper-wrapper">
+               <div class="swiper-slide course premium">
+                  <div class="img_title">
+                      <img src="https://static1.shine.com/l/m/product_image/images_all/1640851375_8085.png" alt="" width="100px">
+                  <h4>Java backend Developer</h4>
+                  </div>
+                  <small>TestPrepTraining</small> 
+                  <small>     Duration: 51 Hours|Mode:Online</small> 
+                  <p class="price_p">₹12999</p>
+                   
+              </div>
+               <div class="swiper-slide course premium">
+                  <div class="img_title">
+                      <img src="https://static1.shine.com/l/m/product_image/images_all/1640851637_4621.png" alt="" width="100px">
+                  <h4>  Backend Developer in Python</h4>
+                  </div>
+                  <small>TestPrepTraining</small>
+                  <p>Duration: 51 Hours|Mode:Online</p>
+                  <p class="price_p">₹12999</p>
+                  
+                   
+              </div>
+               <div class="swiper-slide course premium">
+                  <div class="img_title">
+                      <img src="https://static1.shine.com/l/m/product_image/images_all/1652953799_9984.png" alt="" width="100px">
+                  <h4>  Backend Developer in Node.Js</h4>
+                  </div>
+                  <small>TestPrepTraining</small>
+                  <p>Duration: 41 Hours|Mode:Online</p>
+                  <p class="price_p">₹12999</p>
+              
+                   
+              </div>
+               <div class="swiper-slide course premium">
+                  <div class="img_title">
+                      <img src="https://static1.shine.com/l/m/product_image/images_all/1652953980_7255.png" alt="" width="100px">
+                  <h4>  Backend Developer in .Net</h4>
+                  </div>
+                  <small>TestPrepTraining</small>
+                  <p>Duration: 21 Hours|Mode:Online</p>
+                  <p class="price_p">₹12999</p>
+             
+                   
+              </div>
+               <div class="swiper-slide course premium">
+                  <div class="img_title">
+                      <img src="https://static1.shine.com/l/m/product_image/images_all/1652954044_279.png" alt="" width="100px">
+                  <h4>  Frontend Developer in React.Js</h4>
+                  </div>
+                  <small>TestPrepTraining</small>
+                  <p>Duration: 38 Hours|Mode:Online</p>
+                  <p class="price_p">₹12999</p>
+            
+                   
+              </div>
+               <div class="swiper-slide course premium">
+                  <div class="img_title">
+                      <img src="https://static1.shine.com/l/m/product_image/images_all/1640853726_1126.png" alt="" width="100px">
+                  <h4>  Frontend Developer in Angular.Js</h4>
+                  </div>
+                  <small>TestPrepTraining</small>
+                  <p>Duration: 31 Hours|Mode:Online</p>
+                  <p class="price_p">₹12999</p>
+
+                   
+                </div>              
+             </div>
+             <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+             
+           </div>
+         
+      
+  </div>
+   
+
     <div id="jobs">
       <div id="headline">
         <h3>Jobs based on your last search</h3>
@@ -161,6 +236,22 @@
     
    </div>
    <div id="last"><img src="./images/footer.jpg" alt=""></div> 
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script>
+
+var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 50,
+        stagepadding:0  ,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+         
+      });
+</script> 
 </body>
 </html>
 <script src="scripts/AL.js"></script>

@@ -13,6 +13,13 @@ function alertFun(){
    content_div.append(image)
 
 }
+function recom(){
+  content_div=document.getElementById("content_div");
+  content_div.innerHTML=null;
+  let image=document.createElement("img");
+  image.src= "./images/recom.jpg";
+  content_div.append(image)
+}
 function saveFun(){
     content_div=document.getElementById("content_div");
     content_div.innerHTML=null;
@@ -27,7 +34,7 @@ function appliedFun(){
     image.src= "./images/msg_content.jpg";
     content_div.append(image)
 }
-let data=[
+// let data=[
     // {
     //   "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1507612395_7198.png&w=1920&q=75",
     //   "name": "Advertising Manager",
@@ -94,17 +101,17 @@ let data=[
     //   "price": 6969,
     //   "id": 6
     // },
-    {
-      "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1532691289_722.png&w=1920&q=75",
-      "name": "SEO Test",
-      "rating": 3.5,
-      "category": "Sales & Marketing",
-      "provider": "TestPrepTraining",
-      "skill": "Sales",
-      "duration": "365 days",
-      "price": 999,
-      "id": 7
-    },
+    // {
+    //   "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1532691289_722.png&w=1920&q=75",
+    //   "name": "SEO Test",
+    //   "rating": 3.5,
+    //   "category": "Sales & Marketing",
+    //   "provider": "TestPrepTraining",
+    //   "skill": "Sales",
+    //   "duration": "365 days",
+    //   "price": 999,
+    //   "id": 7
+    // },
     // {
     //   "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1555566599_329.png&w=1080&q=75",
     //   "name": "Linkedin Marketing",
@@ -149,85 +156,85 @@ let data=[
     //   "price": 9999,
     //   "id": 11
     // },
-    {
-      "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1509282366_6812.png&w=1080&q=75",
-      "name": "Distribution Manager",
-      "rating": 5,
-      "category": "Sales & Marketing",
-      "provider": "Vskills",
-      "skill": "Manager",
-      "duration": "12 hr",
-      "price": 3499,
-      "id": 12
-    },
-    {
-      "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1542800087_8980.png&w=1080&q=75",
-      "name": "Digital Marketing Certification",
-      "rating": 4.5,
-      "category": "Sales & Marketing",
-      "provider": "Edureka",
-      "skill": "Marketing",
-      "duration": "30 hrs",
-      "price": 19995,
-      "id": 13
-    }
+  //   {
+  //     "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1509282366_6812.png&w=1080&q=75",
+  //     "name": "Distribution Manager",
+  //     "rating": 5,
+  //     "category": "Sales & Marketing",
+  //     "provider": "Vskills",
+  //     "skill": "Manager",
+  //     "duration": "12 hr",
+  //     "price": 3499,
+  //     "id": 12
+  //   },
+  //   {
+  //     "image": "https://learning.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fl%2Fm%2Fproduct_image%2Fimages_all%2F1542800087_8980.png&w=1080&q=75",
+  //     "name": "Digital Marketing Certification",
+  //     "rating": 4.5,
+  //     "category": "Sales & Marketing",
+  //     "provider": "Edureka",
+  //     "skill": "Marketing",
+  //     "duration": "30 hrs",
+  //     "price": 19995,
+  //     "id": 13
+  //   }
     
-  ];
-  let append=(data)=>{
-    let courses= document.getElementById("courses");
-    courses.innerHTML=null;
-    let leftarrow= document.createElement("div")
-    leftarrow.setAttribute("id","leftArrow")
-    leftarrow.innerHTML=` <div id="leftarrow"><button>&lt;</button></div>`
+  // ];
+  // let append=(data)=>{
+  //   let courses= document.getElementById("courses");
+  //   courses.innerHTML=null;
+  //   let leftarrow= document.createElement("div")
+  //   leftarrow.setAttribute("id","leftArrow")
+  //   leftarrow.innerHTML=` <div id="leftarrow"><button>&lt;</button></div>`
    
-    courses.append(leftarrow)
-    data.forEach((ele)=>{
-        let name= document.createElement('h4');
-        name.textContent=ele.name;
-        name.setAttribute('class','name')
+  //   courses.append(leftarrow)
+  //   data.forEach((ele)=>{
+  //       let name= document.createElement('h4');
+  //       name.textContent=ele.name;
+  //       name.setAttribute('class','name')
 
-        let image= document.createElement('img');
-        image.src=ele.image;
+  //       let image= document.createElement('img');
+  //       image.src=ele.image;
 
-        let rating= document.createElement('h4');
-        rating.textContent=`${ele.rating} ⭐`;
+  //       let rating= document.createElement('h4');
+  //       rating.textContent=`${ele.rating} ⭐`;
 
-        let provider=document.createElement('small');
-        provider.textContent=ele.provider;
-        provider.setAttribute('class','provider');
+  //       let provider=document.createElement('small');
+  //       provider.textContent=ele.provider;
+  //       provider.setAttribute('class','provider');
         
 
-        let dura=document.createElement('p');
-        dura.innerText=`Duration: ${ele.duration} | Mode: Online`;
+  //       let dura=document.createElement('p');
+  //       dura.innerText=`Duration: ${ele.duration} | Mode: Online`;
 
-        let price= document.createElement('h4');
-        price.textContent=`₹${ele.price}`;
+  //       let price= document.createElement('h4');
+  //       price.textContent=`₹${ele.price}`;
 
 
 
-        let cards=document.createElement('div');
-        cards.setAttribute('class','cards')
+  //       let cards=document.createElement('div');
+  //       cards.setAttribute('class','cards')
         
-        let div= document.createElement('div');
-        div.setAttribute('class','div')
-        let div1= document.createElement('div');
-        div1.setAttribute('class','div1')
+  //       let div= document.createElement('div');
+  //       div.setAttribute('class','div')
+  //       let div1= document.createElement('div');
+  //       div1.setAttribute('class','div1')
 
-        let div2= document.createElement('div');
-    div2.setAttribute("class","div2")
-        div1.append(image,name)
-        div2.append( provider,rating);
+  //       let div2= document.createElement('div');
+  //   div2.setAttribute("class","div2")
+  //       div1.append(image,name)
+  //       div2.append( provider,rating);
       
-        div.append(div1,div2,dura,price)
-        cards.append(div)
-        courses.append(cards);
-    });
-    let rightarrow= document.createElement("div")
-    rightarrow.setAttribute("id","rightArrow")
-    rightarrow.innerHTML=` <div id="leftarrow"><button>&gt;</button></div>`
-    courses.append(rightarrow)
-  }
-  append(data);
+  //       div.append(div1,div2,dura,price)
+  //       cards.append(div)
+  //       courses.append(cards);
+  //   });
+  //   let rightarrow= document.createElement("div")
+  //   rightarrow.setAttribute("id","rightArrow")
+  //   rightarrow.innerHTML=` <div id="leftarrow"><button>&gt;</button></div>`
+  //   courses.append(rightarrow)
+  // }
+  // append(data);
 
 
 

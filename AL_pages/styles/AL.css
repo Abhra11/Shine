@@ -17,6 +17,22 @@ body{
    background-color: #f7f7ff;
    display: flex;
 }
+h1:hover{
+    color: #5d6dbe;
+    cursor: pointer;
+}
+h2:hover{
+    color: #5d6dbe;
+    cursor: pointer;
+}
+h3:hover{
+    color: #5d6dbe;
+    cursor: pointer;
+}
+h4:hover{
+    color: #5d6dbe;
+    cursor: pointer;
+}
 /* ------all classes----------- */
 .img{
     width: 100%;
@@ -29,8 +45,6 @@ body{
 /* -----top---- */
 #left_top{
     width: 70%;
-
-    border-color: 1px solid rebeccapurple;
 }
 #right_top{
     width: 30%;
@@ -58,27 +72,27 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     align-items: center;
   
 }
+#crausal_btn{
+    margin-right: 20px;
+    color: #5d6dbe;
+}
 .count_div{
     display: flex;
     width: 24%;
-    /* height: 50%; */
+ 
 }
 .count_text{
     margin: auto;
- 
 }
-.count_text:nth-child(1){
-    width: 100%;
-    /* display: flex;
-    flex-direction: column;
-    /* width:40%;
-    height: 20%; */ 
-    margin: auto;
-    border: 1px solid red; 
+.count_p{
+    font-size: 14px;
+    color: gray;
 }
+
+
 .count_img{
-    width:30%;
-    height: 30%;
+    width:25%;
+    height: 25%;
     margin: auto;
 }
 #navigation{
@@ -103,6 +117,12 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 #chart>img{
     width: 100%;
 }
+#recom{
+    background-color: #d8dcf9;  
+    border-radius: 10px; 
+    border: none; 
+    padding: 5px;
+}
 #left_nav{
     width: 65%;
     display: flex;
@@ -119,66 +139,49 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 #courses_recom>h3{
     margin-left: 30px;
 }
-/* courses remmmend */
-#courses_recom{
-    width:90% ;
+
+#popular_courses{
+    width:80% ;
+    margin-top: 20px;
     border: 1px solid #c5ebed;
+    padding: 10px;
     margin: auto;
-    /* height: 260px; */
+  
     background-color: #f4f8fd;
-}
-#leftArrow{
-    display: inline-block;
-    margin-right: 10px;
-}
-#rightArrow{
-    display: inline-block;
-    margin-left: 10px;
-}
+
+     }
+
+     #popular_courses>h1{
+        width: fit-content;
+        margin: auto;
+        font-size: 50px;
+     } 
+   
+
 small{
     color: grey;
 }
-#courses{
-    background-color: #f4f8fd;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 180px;
-    gap: 20px; */
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
 
+.img_title h4{
+    color: #5d6dbe;
+    margin-left: 10px;
 }
-.name{
-    color: #5364c4;
-}
-.cards{
-    width: 28%;
-height: 80%;
-background-color: #ffffff;
-margin-left: 20px;
-}
-.div2{
-    display: flex;
-    margin: auto;
-    justify-content: space-around;
-    align-items: center;
-}
-.div1{
+
+.img_title{
 display: flex;
-justify-content:space-around ;
+justify-content:space-between ;
 align-items: center;
+padding: 4px;
 }
-.div1 img{
+.img_title img{
     width: 20%;
-    height: 20%;
-}
-/* jobs based on  */
-#jobs{
-    width: 90%;
-    /* height: 400px; */
+    height: 20%; 
     margin: auto;
+    background-color: #ffffff;
+    margin-top: 30px;
+}
+
+#jobs{
     background-color: #ffffff;
     margin-top: 30px;
 }
@@ -336,3 +339,6 @@ height: 40px;
   margin-top: 30px;
 
 }
+
+
+
