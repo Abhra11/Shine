@@ -1,0 +1,58 @@
+#cart11{
+    margin-left: 40%;
+    margin-top: 4%;
+}
+#cart11>button{
+    background-color: #7b43fc;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+#display{
+    display: flex;
+    gap: 15px;
+}
+#cartProducts{
+    
+    width: 80%;
+}
+#sudhar{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+}
+#sudhar>div:nth-child(2){
+    margin-left: 80%;
+    margin-top: 2%;
+}
+#display>div:nth-child(2){
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 20%;
+    margin-left: 5%;
+    height: 200px;
+    margin-top: 20px;
+}
+#btn1{
+    margin-top: 30%;
+}
+#btn1>button{
+    background-color: #7b43fc;
+    font-size: 18px;
+    padding: 10px 20px;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#nav{
+    /* height: 40px; */
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#nav>img{
+    height: 40px;
+    margin-left: 4%;
+}
