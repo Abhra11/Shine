@@ -1,13 +1,4 @@
-let arr=[
-  {
-  name:"BAc",
-  "price":3300,
-},
-{
-  name:"BAc",
-  "price":3300,
-}
-];
+let arr= JSON.parse(localStorage.getItem('cartData'))||[];
 
 let Total_Price=0;
 let remove = (i,el)=>{

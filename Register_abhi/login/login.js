@@ -63,6 +63,7 @@ let loginData = ()=>{
     } 
     if(is==="yes"){
         alert("Successfully Login");
+        window.location.href='../../AL_pages/AL_landing.html'
     } else {
         alert("credential wrong");
     }

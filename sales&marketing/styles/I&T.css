@@ -340,6 +340,9 @@
     padding: 5px 15px;
     font-weight: bolder;
 }
+.buyBtn:hover{
+    cursor: pointer;
+}
 .explrBtn{
     border: none;
     background-color: transparent;
