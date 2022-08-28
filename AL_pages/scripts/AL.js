@@ -246,6 +246,5 @@ arr.forEach((el)=>{
     user.innerText=el.name;
 
 })
-// user.innerText= arr.name;
-// console.log(arr.name)
+
 

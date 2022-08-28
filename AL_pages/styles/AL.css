@@ -1,8 +1,13 @@
+
+*{
+    font-family: "PT Sans",sans-serif;
+}
 body{
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
+
 #navbar{
   width: 100%;
   height: 65px;
@@ -20,6 +25,7 @@ body{
 h1:hover{
     color: #5d6dbe;
     cursor: pointer;
+    
 }
 h2:hover{
     color: #5d6dbe;
@@ -124,7 +130,7 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 5px;
 }
 #left_nav{
-    width: 65%;
+    width: 70%;
     display: flex;
     justify-content: space-evenly;  
 }
@@ -332,13 +338,8 @@ height: 40px;
 #guide>img{
     width: 100%;
 }
-
-
 #last{
     width: 100%;
   margin-top: 30px;
 
 }
-
-
-
