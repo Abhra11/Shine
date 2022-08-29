@@ -687,6 +687,7 @@ let tData=[{
   let arr=JSON.parse(localStorage.getItem("cartData"))||[];
   let addCart=(ele)=>{
    arr.push(ele);
+   alert("Course added in Cart Successfully")
    localStorage.setItem('cartData',JSON.stringify(arr))
   }
 
